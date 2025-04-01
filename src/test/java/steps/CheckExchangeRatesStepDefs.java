@@ -12,22 +12,22 @@ public class CheckExchangeRatesStepDefs extends CheckExchangeRatesService {
         checkExchangeRates();
     }
 
-    @Then("User displays exchange rate for currency code: {string}")
+    @Then("User prints exchange rate for currency code: {string}")
     public void userDisplaysExchangeRateForCurrencyCode(String code) {
         checkExchangeRatesByCode(code);
     }
 
-    @And("User displays exchange rate for currency name: {string}")
+    @And("User prints exchange rate for currency name: {string}")
     public void userDisplaysExchangeRateForCurrencyName(String name) {
         checkExchangeRatesByName(name);
     }
 
-    @And("User displays exchange rates above {float}")
+    @And("User prints exchange rates above {float}")
     public void userDisplaysExchangeRatesAbove(float abovePrice) {
         checkExchangeRatesAbovePrice(abovePrice);
     }
 
-    @And("User displays exchange rates below {float}")
+    @And("User prints exchange rates below {float}")
     public void userDisplaysExchangeRatesBelow(float belowPrice) {
         checkExchangeRatesBelowPrice(belowPrice);
     }
